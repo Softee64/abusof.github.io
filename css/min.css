@@ -1,0 +1,28 @@
+/*@media screen and (max-width: 900px) and (min-width: 800px) {
+  .carousel-inner {
+    height: 300px;
+  }
+  .d-block {
+  	height: 300px;
+  }*/
+
+  @media screen and (max-width: 600px)  {
+
+    .carousel-inner {
+    height: 200px !important;
+  }
+    .d-block {
+      height: 120px !important;
+    }
+  }
+
+  @media screen and (max-width: 750px)  {
+
+    .carousel-inner {
+    height: 300px;
+  }
+    .d-block {
+      height: 200px;
+      margin: 40px auto 0;
+    }
+  }

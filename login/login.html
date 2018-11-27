@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  	<!-- Favicon -->
+  	<link rel="shortcut icon" href="../img/favicon1.png" type="img/x-icon">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="stylesheet" type="text/css" href="css/min.css">
+	<!-- <link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen-900px.css"> -->
+	<!-- <link rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen-600px.css"> -->
+	
+	<title>Welcome To MockPay - Log In</title>
+</head>
+
+<body class="login login-action-login mp-core-ui  locale-en-us">
+<div id="login">
+		<h1>
+			<a href="https://mockpay.com/" title="Powered by MockPay" tabindex="-1">Powered by MockPay</a>
+		</h1>
+	
+		<form name="loginform" id="loginform" action="http://mockpay.com/mp-login.php" method="post">
+			<p>
+				<label for="user_login">Username or Email Address<br>
+				<input type="text" name="log" id="user_login" class="input" value="" size="20" required="required"></label>
+			</p>
+			<p>
+				<label for="user_pass">Password<br>
+				<input type="password" name="pwd" id="user_pass" class="input" value="" size="20" required="required"></label>
+			</p>
+				<p class="forgetmenot">
+					<label for="rememberme">
+						<input name="rememberme" type="checkbox" id="rememberme" value="forever" class="checkboxField"> Remember Me
+					</label>
+				</p>
+			<p class="submit">
+				<input type="submit" name="mp-submit" id="mp-submit" class="button button-primary button-large" value="Log In">
+				<input type="hidden" name="redirect_to" value="http://mockpay.com/mp-admin/">
+				<input type="hidden" name="testcookie" value="1">
+			</p>
+		</form>
+
+<p id="nav">
+	<a href="http://mockpay.com/mp-login.php?action=lostpassword">Lost your password?</a>
+</p>
+
+<script type="text/javascript">
+function wp_attempt_focus(){
+setTimeout( function(){ try{
+d = document.getElementById('user_login');
+d.focus();
+d.select();
+} catch(e){}
+}, 200);
+}
+
+wp_attempt_focus();
+if(typeof wpOnload=='function')wpOnload();
+</script>
+
+	<p id="backtohome"><a href="../index.html">← Back to MockPay</a></p>
+		
+</div>
+
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
